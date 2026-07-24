@@ -328,7 +328,7 @@ local function downloadFile(path, func)
 
 		createDownloader(path)
 		local suc, res = pcall(function()
-			return game:HttpGet('https://raw.githubusercontent.com/4fundsagent-source/badvape-v2/'..readfile('badvape/profiles/commit.txt')..'/'..select(1, path:gsub('badvape/', '')), true)
+			return game:HttpGet('https://raw.githubusercontent.com/emekaobierika687-png/badvape-v2/'..readfile('badvape/profiles/commit.txt')..'/'..select(1, path:gsub('badvape/', '')), true)
 		end)
 		if not suc or res == '404: Not Found' then
 			error(res)
@@ -6152,7 +6152,7 @@ general:CreateButton({
 		if shared.BadVapeDeveloper then
 			loadstring(readfile('badvape/loader.lua'), 'loader')(license)
 		else
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/4fundsagent-source/badvape-v2/'..readfile('badvape/profiles/commit.txt')..'/loader.lua', true), 'loader')(license)
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/emekaobierika687-png/badvape-v2/'..readfile('badvape/profiles/commit.txt')..'/loader.lua', true), 'loader')(license)
 		end
 	end,
 	Tooltip = 'This will set your profile to the default settings of BadVape'
@@ -6186,7 +6186,7 @@ general:CreateButton({
 		if shared.BadVapeDeveloper then
 			loadstring(readfile('badvape/loader.lua'), 'loader')(license)
 		else
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/4fundsagent-source/badvape-v2/'..readfile('badvape/profiles/commit.txt')..'/loader.lua', true), 'loader')(license)
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/emekaobierika687-png/badvape-v2/'..readfile('badvape/profiles/commit.txt')..'/loader.lua', true), 'loader')(license)
 		end
 	end,
 	Tooltip = 'Reloads BadVape for debugging purposes'
@@ -6303,7 +6303,7 @@ guipane:CreateDropdown({
 			if shared.BadVapeDeveloper then
 				loadstring(readfile('badvape/loader.lua'), 'loader')(license)
 			else
-				loadstring(game:HttpGet('https://raw.githubusercontent.com/4fundsagent-source/badvape-v2/'..readfile('badvape/profiles/commit.txt')..'/loader.lua', true), 'loader')(license)
+				loadstring(game:HttpGet('https://raw.githubusercontent.com/emekaobierika687-png/badvape-v2/'..readfile('badvape/profiles/commit.txt')..'/loader.lua', true), 'loader')(license)
 			end
 		end
 	end,

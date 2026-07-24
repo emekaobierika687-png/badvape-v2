@@ -39,7 +39,7 @@ local function downloadFile(path, func)
 		end
 
 		local suc, res = pcall(function()
-			return game:HttpGet('https://raw.githubusercontent.com/4fundsagent-source/badvape-v2/' .. readfile('badvape/profiles/commit.txt') .. '/' .. select(1, path:gsub('badvape/', '')), true)
+			return game:HttpGet('https://raw.githubusercontent.com/emekaobierika687-png/badvape-v2/' .. readfile('badvape/profiles/commit.txt') .. '/' .. select(1, path:gsub('badvape/', '')), true)
 		end)
 		if not suc or res == '404: Not Found' then
 			error(res)

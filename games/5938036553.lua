@@ -20,7 +20,7 @@ local function downloadFile(path, func)
 
 		local suc, res = pcall(function()
 			return game:HttpGet(
-				'https://raw.githubusercontent.com/4fundsagent-source/badvape-v2/'
+				'https://raw.githubusercontent.com/emekaobierika687-png/badvape-v2/'
 					.. readfile('badvape/profiles/commit.txt')
 					.. '/'
 					.. select(1, path:gsub('badvape/', '')),

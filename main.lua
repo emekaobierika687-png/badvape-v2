@@ -190,8 +190,8 @@ local function downloadFile(path, func)
 		local relative = path:gsub('^badvape/', '', 1)
 		local releaseRef = installedReleaseRef()
 		local urls = {
-			'https://raw.githubusercontent.com/4fundsagent-source/badvape-v2/'..releaseRef..'/'..relative,
-			'https://cdn.jsdelivr.net/gh/4fundsagent-source/badvape-v2@'..releaseRef..'/'..relative,
+			'https://raw.githubusercontent.com/emekaobierika687-png/badvape-v2/'..releaseRef..'/'..relative,
+			'https://cdn.jsdelivr.net/gh/emekaobierika687-png/badvape-v2@'..releaseRef..'/'..relative,
 		}
 		local lastError = 'download failed'
 		for mirror, url in urls do

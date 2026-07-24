@@ -51,8 +51,8 @@ end
 
 local function remoteBootstrap()
 	local urls = {
-		'https://raw.githubusercontent.com/4fundsagent-source/badvape-v2/main/init.lua',
-		'https://cdn.jsdelivr.net/gh/4fundsagent-source/badvape-v2@main/init.lua',
+		'https://raw.githubusercontent.com/emekaobierika687-png/badvape-v2/main/init.lua',
+		'https://cdn.jsdelivr.net/gh/emekaobierika687-png/badvape-v2@main/init.lua',
 	}
 	for attempt = 1, 3 do
 		for index = 1, #urls do

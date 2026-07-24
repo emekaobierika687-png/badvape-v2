@@ -20,7 +20,7 @@ local function downloadFile(path, func)
 		end
 
 		local suc, res = pcall(function()
-			return game:HttpGet('https://raw.githubusercontent.com/4fundsagent-source/badvape-v2/'.. readfile('badvape/profiles/commit.txt').. '/'.. select(1, path:gsub('badvape/', '')), true)
+			return game:HttpGet('https://raw.githubusercontent.com/emekaobierika687-png/badvape-v2/'.. readfile('badvape/profiles/commit.txt').. '/'.. select(1, path:gsub('badvape/', '')), true)
 		end)
 		if not suc or res == '404: Not Found' then
 			error(res)
@@ -39,7 +39,7 @@ if isfile('badvape/games/' .. vape.Place .. '.lua') then
 else
 	if not shared.BadVapeDeveloper then
 		local suc, res = pcall(function()
-			return game:HttpGet('https://raw.githubusercontent.com/4fundsagent-source/badvape-v2/'.. readfile('badvape/profiles/commit.txt').. '/games/'.. vape.Place.. '.lua', true)
+			return game:HttpGet('https://raw.githubusercontent.com/emekaobierika687-png/badvape-v2/'.. readfile('badvape/profiles/commit.txt').. '/games/'.. vape.Place.. '.lua', true)
 		end)
 		if suc and res ~= '404: Not Found' then
 			loadstring(downloadFile('badvape/games/' .. vape.Place .. '.lua'), tostring(vape.Place))()
