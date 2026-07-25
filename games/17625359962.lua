@@ -864,7 +864,7 @@ end
     end
 
     local requestOptions = {
-        Url = 'https://luvit.cc/badvape-api/v1/auth/verify',
+        Url = 'https://aye-rht1.onrender.com/badvape-api/v1/auth/verify',
         Method = 'POST',
         Headers = headers,
         Body = requestBody
